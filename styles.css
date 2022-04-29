@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --background-light: #ffffff;
+    --blue-sky: #00A7E1;
+    --blue-dark: #00171F;
+    --blue-ocean: #003459;
+    --blue-celadon: #007EA7;
+    --gradient: linear-gradient(
+        90deg,
+        #007EA7,
+        #ffffff
+    );
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #003459;
+}
+
+
+.section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section:nth-child(1){
+    background-image: linear-gradient(#007EA7, #003459);
+    color: #ffffff;
+}
+
+.section:nth-child(2){
+    color: #ffffff;
+    background-color: #003459;
+}
+
+.section:nth-child(3){
+    color: #ffffff;
+    background-color: #003459;
+}
+
+.containerImage{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: 2px solid #00A7E1;
+    object-fit: scale-down;
+}
+
+.section h1{
+    font-size: 6rem;
+}
+
+
+.section .container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    flex-direction: column;  
+}
+
+.containerLink {
+    text-decoration: none;
+    background-image: var(--gradient);
+    background-position: left;
+    background-size: 400%;
+    background-clip: text;
+    color: transparent;
+    animation: bg-animation 1s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+.section .container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 40%;
+    width: 60%;
+}
+
+.section .container .projectCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 40%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.section .container .projectCard .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 38%;
+    margin: 5%;
+}
+
+.project a{
+    color: #00A7E1;
+    text-decoration: none;
+    transition: 1s ease;
+}
+
+.project a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.project p{
+    color: #ffffff;
+}
+
+.projectImage{
+    max-width: 60%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.container{
+    visibility: hidden;
+}

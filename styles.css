@@ -105,6 +105,7 @@ body{
     background-position: left;
     background-size: 400%;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     animation: bg-animation 1s infinite alternate;
 }
